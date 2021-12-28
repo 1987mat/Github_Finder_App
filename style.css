@@ -6,7 +6,11 @@
 html,
 body {
   min-height: 100vh;
-  overflow: auto;
+}
+
+body {
+  display: grid;
+  grid-template-rows: auto auto auto;
 }
 
 .nav-bar {
@@ -121,6 +125,10 @@ body {
   text-align: center;
 }
 
+.main-container #user-repos {
+  margin-bottom: 100px;
+}
+
 .user-repo-info {
   border: 1px solid black;
   border-radius: 5px;
@@ -163,6 +171,7 @@ main .alert-danger {
   position: fixed;
   bottom: 0;
   left: 0;
+  height: 45px;
   width: 100%;
 }
 
