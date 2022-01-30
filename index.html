@@ -5,12 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
-      rel="stylesheet"
-    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"
+    ></script>
     <title>GitHub Finder App</title>
   </head>
   <body>
@@ -31,9 +29,12 @@
       <h4 class="repos-title">Latest Repos:</h4>
       <div id="user-repos"></div>
     </main>
-    <footer class="footer"><span>GitHub Finder App &copy;</span></footer>
-    <script src="github.js"></script>
-    <script src="ui.js"></script>
-    <script src="app.js"></script>
+    <footer>
+      Developed by Mat
+      <a href="https://github.com/1987mat" target="_blank"
+        ><ion-icon name="logo-github"></ion-icon
+      ></a>
+    </footer>
+    <script type="module" src="app.js"></script>
   </body>
 </html>

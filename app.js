@@ -1,3 +1,6 @@
+import { Github } from './src/github.js';
+import { UI } from './src/ui.js';
+
 // Init Github
 const github = new Github();
 

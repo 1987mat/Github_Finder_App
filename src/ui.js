@@ -11,20 +11,27 @@ class UI {
         <img class="image" src="${user.avatar_url}">
       </div>
       <div class="user-info">
-        <span class="blue">Public Repos: ${user.public_repos}</span>
-        <span class="gray">Public Gists: ${user.public_gists}</span>
-        <span class="green">Followers: ${user.followers}</span>
-        <span class="lightgreen">Following: ${user.following}</span>
-        <ul class="user-info-ul">
-          <li><b>Company:</b> ${user.company} </li>
-          <li><b>Website:</b> ${user.blog}</li>
-          <li><b>Twitter:</b> ${user.twitter_username} </li>
-          <li><b>Location:</b> ${user.location}</li>
-          <li><b>Member Since:</b> ${user.created_at}</li>
-        </ul>
-        <a href="${user.html_url}" target="_blank" class="profile-btn">
-          <button>View Profile</button>
-        </a>
+        <div class="user-stats">
+          <span class="blue">Public Repos: ${user.public_repos}</span>
+          <span class="gray">Public Gists: ${user.public_gists}</span>
+          <span class="green">Followers: ${user.followers}</span>
+          <span class="lightgreen">Following: ${user.following}</span>
+        </div>
+        <div class="user-data">
+          <ul class="user-info-ul">
+            <li><b>Company:</b> ${user.company} </li>
+            <li><b>Website:</b> ${user.blog}</li>
+            <li><b>Twitter:</b> ${user.twitter_username} </li>
+            <li><b>Location:</b> ${user.location}</li>
+            <li><b>Member Since:</b> ${user.created_at}</li>
+          </ul>
+        </div>
+        <div class="btn-wrapper">
+          <a href="${user.html_url}" target="_blank" class="profile-btn">
+            <button>View Profile</button>
+          </a>
+        </div>
+      </div>
       </div>
     </div>
     `;
@@ -53,7 +60,6 @@ class UI {
     const alertDiv = document.createElement('div');
     alertDiv.className = className;
     alertDiv.appendChild(document.createTextNode(message));
-    console.log(typeof message);
     const mainContainer = document.querySelector('.main-container');
     const searchContainer = document.querySelector('.search-container');
     mainContainer.insertBefore(alertDiv, searchContainer);
@@ -80,3 +86,5 @@ class UI {
     document.querySelector('.repos-title').style.display = 'none';
   }
 }
+
+export { UI };
