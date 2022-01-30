@@ -54,6 +54,10 @@ body {
   padding: 1em;
 }
 
+.user-image img {
+  width: 30em;
+}
+
 .user-info {
   display: flex;
   flex-direction: column;
@@ -137,6 +141,10 @@ body {
   background-color: lightyellow;
 }
 
+.profile-btn button:active {
+  transform: translateY(4px);
+}
+
 .main-container h4 {
   display: none;
   font-size: 2rem;
@@ -180,9 +188,9 @@ main .alert-danger {
   color: white;
   padding: 0.5em;
   border-radius: 5px;
-  position: absolute;
   width: 50%;
-  left: 50%;
+  margin: 0 auto;
+  margin-bottom: 2em;
 }
 
 /* FOOTER */
@@ -197,16 +205,16 @@ footer {
 /* Phone */
 @media screen and (min-width: 320px) {
   html {
-    font-size: 40%;
-  }
-
-  .user-image {
-    width: 100%;
+    font-size: 30%;
   }
 
   .card-body {
     width: 100%;
     flex-direction: column;
+  }
+
+  .user-image img {
+    width: 100%;
   }
 
   .user-info-ul {
@@ -218,15 +226,17 @@ footer {
 /* Tablet */
 @media screen and (min-width: 576px) {
   html {
-    font-size: 100%;
+    font-size: 80%;
   }
-  .user-image {
-    width: 100%;
-    text-align: center;
-  }
+
   .card-body {
     flex-direction: column;
   }
+
+  .user-image img {
+    width: 100%;
+  }
+
   .user-info-ul {
     position: relative;
     right: 1em;
@@ -239,11 +249,11 @@ footer {
     font-size: 100%;
   }
 
-  .user-image {
-    width: 60%;
-  }
-
   .card-body {
     flex-direction: row;
+  }
+
+  .user-image img {
+    width: 30em;
   }
 }
