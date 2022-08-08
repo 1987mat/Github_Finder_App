@@ -2,14 +2,19 @@
 
 * {
   box-sizing: border-box;
-  color: #181818;
+  color: #303030;
   font-family: 'Montserrat', sans-serif;
 }
 
 html,
 body {
   height: 100vh;
-  background-color: #faf0e6;
+  background: rgb(221, 235, 242);
+  background: linear-gradient(
+    90deg,
+    rgba(221, 235, 242, 1) 9%,
+    rgba(255, 255, 255, 1) 98%
+  );
 }
 
 body {
@@ -26,7 +31,7 @@ body {
 
 .nav-bar h1 {
   text-align: center;
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 
 /* MAIN */
@@ -34,16 +39,24 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: -2em;
   margin-bottom: 2em;
+  margin-top: 4em;
 }
 
 .search-container input {
-  width: 40%;
-  height: 2.5rem;
-  border-radius: 5px;
-  border: 2px solid black;
+  width: 50%;
+  height: 3.5em;
   padding: 1em;
+  font-size: 1rem;
+  border-top: none;
+  border-radius: 5px;
+  background: transparent;
+  margin-top: 3em;
+}
+
+#user-profile,
+#user-repos {
+  padding: 3em;
 }
 
 .card-body {
@@ -51,7 +64,7 @@ body {
   gap: 1em;
   border: 0.5px solid black;
   border-radius: 5px;
-  padding: 1em;
+  padding: 3em;
 }
 
 .user-image img {
@@ -123,22 +136,22 @@ body {
 
 .profile-btn button {
   text-decoration: none;
-  background-color: lightgrey;
-  font-weight: 900;
-  font-size: 1rem;
-  border-radius: 50px 50px;
+  background-color: lightblue;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-radius: 5px;
   border: none;
   box-sizing: content-box;
   width: auto;
-  padding: 1em;
+  padding: 0.8em 1em 1em 1em;
   text-align: center;
   height: 1em;
-  box-shadow: 2px 2px 2px black;
+  transition: background-color 0.2s ease-in;
 }
 
 .profile-btn button:hover {
   cursor: pointer;
-  background-color: lightyellow;
+  background-color: white;
 }
 
 .profile-btn button:active {
