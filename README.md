@@ -11,7 +11,7 @@ Built with JS classes and async await for API calls.</p>
 
 ## Screenshots
 
-<img src="https://user-images.githubusercontent.com/64235918/194167744-f78fc4a2-9cb5-4e73-8c16-6e8e96c8fa7f.png" width="400"/>
+<img src="https://github.com/1987mat/Github_Finder_App/assets/64235918/707b68e0-374c-4634-9e6c-f8f78dc55a5d" width="400"/>
 
 ## Built With
 
