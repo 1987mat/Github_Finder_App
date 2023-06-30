@@ -23,35 +23,72 @@ body {
 }
 
 /* HEADER */
-.nav-bar {
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-
-.nav-bar h1 {
+h1 {
   text-align: center;
   font-size: 3.5rem;
 }
 
-/* MAIN */
-.search-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 2em;
-  margin-top: 4em;
+h3 {
+  text-align: center;
 }
 
-.search-container input {
-  width: 50%;
+/* MAIN */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar {
+  margin-top: 5em;
+  margin-bottom: 3em;
+  width: 60%;
+  position: relative;
+}
+
+.search-bar .fa-search {
+  position: absolute;
+  left: 1.25rem;
+  top: 1.3rem;
+  font-size: 1.5rem;
+  color: gray;
+}
+
+.search-bar input {
+  width: 100%;
   height: 3.5em;
-  padding: 1em;
-  font-size: 1rem;
-  border-top: none;
-  border-radius: 5px;
-  background: transparent;
-  margin-top: 3em;
+  padding-left: 3.5rem;
+  font-size: 1.25rem;
+  border-radius: 50px;
+  border: none;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+input[type='search']::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin-right: 1rem;
+  background: linear-gradient(
+      45deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0) 43%,
+      #000 45%,
+      #000 55%,
+      rgba(0, 0, 0, 0) 57%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    linear-gradient(
+      135deg,
+      transparent 0%,
+      transparent 43%,
+      #000 45%,
+      #000 55%,
+      transparent 57%,
+      transparent 100%
+    );
 }
 
 #user-profile,
@@ -206,19 +243,16 @@ main .alert-danger {
   margin-bottom: 2em;
 }
 
-/* FOOTER */
 footer {
   font-weight: 600;
   bottom: 0;
   text-align: center;
 }
 
-/* MEDIA QUERIES */
-
 /* Phone */
 @media screen and (min-width: 320px) {
   html {
-    font-size: 30%;
+    font-size: 70%;
   }
 
   .card-body {
@@ -239,7 +273,7 @@ footer {
 /* Tablet */
 @media screen and (min-width: 576px) {
   html {
-    font-size: 80%;
+    font-size: 90%;
   }
 
   .card-body {

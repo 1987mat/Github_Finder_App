@@ -1,6 +1,7 @@
 # Github Finder App
 
-<p>CRUD app that fetches and displays a github user profile.</p>
+<p>CRUD app that fetches and displays a Github user profile. 
+Built with JS classes and async await for API calls.</p>
 
 ## Links
 
@@ -14,9 +15,9 @@
 
 ## Built With
 
-- JavaScript ES6
 - HTML
 - CSS
+- JavaScript
 
 ## Author
 

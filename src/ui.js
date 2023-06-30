@@ -3,8 +3,9 @@ class UI {
     this.profile = document.getElementById('user-profile');
     this.repos = document.getElementById('user-repos');
   }
+
   showProfile(user) {
-    // Render user profile
+    // Render profile
     this.profile.innerHTML = `
     <div class="card-body">
       <div class="user-image">
@@ -51,6 +52,7 @@ class UI {
       </div>
       `;
     });
+
     this.repos.innerHTML = output;
     document.querySelector('.repos-title').style.display = 'block';
   }

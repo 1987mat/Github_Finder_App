@@ -12,7 +12,6 @@ const searchUser = document.getElementById('search-username');
 
 searchUser.addEventListener('keyup', (e) => {
   // Get input text
-
   const inputText = e.target.value;
 
   if (inputText !== '') {
