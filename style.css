@@ -43,7 +43,6 @@ h3 {
 .search-bar {
   margin-top: 5em;
   margin-bottom: 3em;
-  width: 60%;
   position: relative;
 }
 
@@ -258,6 +257,10 @@ footer {
     font-size: 70%;
   }
 
+  .search-bar {
+    width: 85%;
+  }
+
   .card-body {
     width: 100%;
     flex-direction: column;
@@ -277,6 +280,10 @@ footer {
 @media screen and (min-width: 576px) {
   html {
     font-size: 90%;
+  }
+
+  .search-bar {
+    width: 65%;
   }
 
   .card-body {
