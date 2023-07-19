@@ -95,7 +95,11 @@ input[type='search']::-webkit-search-cancel-button {
 
 #user-profile,
 #user-repos {
-  padding: 3em;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .card-body {
@@ -103,7 +107,7 @@ input[type='search']::-webkit-search-cancel-button {
   gap: 1em;
   border: 0.5px solid black;
   border-radius: 5px;
-  padding: 3em;
+  padding: 1em;
 }
 
 .user-image img {
