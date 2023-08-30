@@ -20,11 +20,11 @@ class UI {
         </div>
         <div class="user-data">
           <ul class="user-info-ul">
-            <li><b>Company:</b> ${user.company} </li>
-            <li><b>Website:</b> ${user.blog}</li>
-            <li><b>Twitter:</b> ${user.twitter_username} </li>
-            <li><b>Location:</b> ${user.location}</li>
-            <li><b>Member Since:</b> ${user.created_at}</li>
+            <li><strong>Company:</strong> ${user.company} </li>
+            <li><strong>Website:</strong> ${user.blog}</li>
+            <li><strong>Twitter:</strong> ${user.twitter_username} </li>
+            <li><strong>Location:</strong> ${user.location}</li>
+            <li><strong>Member Since:</strong> ${user.created_at}</li>
           </ul>
         </div>
         <div class="btn-wrapper">
